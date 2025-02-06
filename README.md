@@ -40,10 +40,3 @@ La directora de marketing, **Lily Moreno**, ha identificado la necesidad de aume
 #### Oportunidades en Medios Digitales
 - ¿Qué oportunidades ofrece el entorno digital (por ejemplo, redes sociales, correo electrónico, campañas online) para influenciar y persuadir a los usuarios ocasionales a convertirse en miembros anuales?
 
----
-
-**Nota:** Este análisis es fundamental para diseñar estrategias que potencien la conversión de usuarios ocasionales a miembros anuales, incrementando la rentabilidad y sostenibilidad del sistema Cyclistic.
-
----
-
-*Repositorio creado como parte de la iniciativa de marketing y análisis de datos en Cyclistic.*

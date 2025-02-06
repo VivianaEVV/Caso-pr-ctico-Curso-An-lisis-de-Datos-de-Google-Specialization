@@ -131,3 +131,39 @@ Para asegurar la calidad y coherencia del análisis, se siguieron los siguientes
 #### Versiones de Respaldo
 - Se guardaron versiones de respaldo de los datos originales y de los conjuntos transformados para poder realizar revisiones o comparaciones posteriores, garantizando la trazabilidad y reproducibilidad del proceso.
 
+---
+
+## 4. Resumen del Análisis
+
+### Exploración Inicial
+
+El análisis inicial consistió en obtener estadísticas descriptivas para obtener una visión general del comportamiento de los miembros y ciclistas ocasionales en el uso de las bicicletas Cyclistic. Se realizó un análisis de los siguientes puntos:
+
+- **Promedio, Máximo y Mínimo de `ride_length` para cada grupo**:  
+  Se calculó la duración promedio de los viajes (`ride_length`) para los dos grupos de usuarios: miembros y ocasionales. Se compararon también los valores máximos y mínimos para observar si existen diferencias notables en la duración de los viajes entre los dos grupos.
+
+- **Recuento de Viajes por Día de la Semana y por Tipo de Usuario**:  
+  Se contabilizó la cantidad de viajes realizados por día de la semana para cada tipo de usuario. Esto permitió identificar si ciertos días tienen una mayor o menor demanda, así como la preferencia de los usuarios por ciertos días de la semana (por ejemplo, fines de semana vs. días laborales).
+
+### Análisis Detallado
+
+- **Comparación de Duración de Viajes**:  
+  Se utilizó una tabla dinámica para calcular la duración promedio de los viajes para ambos grupos (miembros vs. ocasionales). Se observaron diferencias en la duración de los viajes, sugiriendo que los miembros tienden a realizar viajes más cortos y frecuentes, mientras que los ciclistas ocasionales tienen viajes más largos, a menudo asociados a recorridos recreativos o de ocio.
+
+- **Patrones Temporales**:  
+  Se analizó la distribución de los viajes a lo largo de la semana, identificando patrones de comportamiento que muestran diferencias entre días laborales y fines de semana. Los miembros parecen usar las bicicletas con más regularidad durante la semana, mientras que los ciclistas ocasionales se concentran más en los fines de semana, lo que podría estar relacionado con actividades recreativas.
+
+- **Tendencias y Picos**:  
+  Se identificaron las horas pico durante el día y las estaciones con mayor demanda, lo que permitió observar la variabilidad en la utilización de bicicletas en diferentes momentos del día. Además, se detectaron picos de demanda en ciertos horarios (por ejemplo, por la mañana temprano o al final de la tarde), lo cual es consistente con patrones de movilidad en la ciudad.
+
+### Hallazgos Clave
+
+- **Comportamiento de los Miembros vs. Ocasionales**:  
+  Los miembros tienden a utilizar las bicicletas de manera más regular y frecuente, con viajes más cortos, a menudo de naturaleza utilitaria (por ejemplo, desplazamientos diarios o para ir al trabajo). En contraste, los ciclistas ocasionales tienen viajes más largos y esporádicos, relacionados probablemente con actividades de ocio.
+
+- **Diferencias Geográficas o de Uso**:  
+  Se observaron diferencias en el uso de las estaciones, con algunas ubicaciones teniendo una mayor concentración de viajes tanto para miembros como para ciclistas ocasionales. Sin embargo, ciertos lugares parecen atraer más a los ciclistas ocasionales, mientras que las estaciones en zonas de trabajo o comerciales tienen más actividad por parte de los miembros.
+
+- **Oportunidades de Marketing**:  
+  A partir de los hallazgos, se podrían diseñar estrategias de marketing dirigidas a promover las membresías en momentos específicos, como en días de baja demanda o en estaciones con menor tráfico. Por ejemplo, se podrían ofrecer descuentos o promociones especiales para nuevos miembros en días con menos viajes o en zonas geográficas donde los ciclistas ocasionales sean más frecuentes. Además, podrían promoverse planes de membresía con beneficios adicionales durante las horas pico para fidelizar a los usuarios que ya utilizan las bicicletas.
+

@@ -18,9 +18,7 @@ Con esta información se podrán diseñar estrategias de marketing específicas 
 ### Contexto y Antecedentes
 
 #### Sobre Cyclistic
-- Cyclistic es un sistema de bicicletas compartidas operado en Chicago.
-- Ofrece una amplia variedad de bicicletas, incluyendo opciones eléctricas y bicicletas adaptadas.
-- Cuenta con diferentes planes de precios: pases de un solo viaje, pases diarios y membresías anuales.
+Cyclistic es un sistema de bicicletas compartidas operado en Chicago. Ofrece una amplia variedad de bicicletas, incluyendo opciones eléctricas y bicicletas adaptadas. Cuenta con diferentes planes de precios: pases de un solo viaje, pases diarios y membresías anuales.
 
 #### Rentabilidad y Estrategia de Marketing
 - **Miembros anuales:** Son significativamente más rentables para la empresa.

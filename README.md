@@ -218,4 +218,4 @@ El análisis inicial consistió en obtener estadísticas descriptivas para obten
 ### Incentivos para la Fidelización:
 
 - **Recomendación**: Desarrollar programas de fidelización que incentiven a los usuarios ocasionales a probar la membresía anual, resaltando beneficios exclusivos como viajes ilimitados, tarifas especiales o acceso prioritario a bicicletas en estaciones de alta demanda. Además, se pueden incluir recompensas por la frecuencia de uso o por invitar a amigos a unirse al servicio.
-- **Objetivo**: Fomentar la lealtad entre los usuarios actuales, alentándolos a convertirse en miembros de largo plazo."
+- **Objetivo**: Fomentar la lealtad entre los usuarios actuales, alentándolos a convertirse en miembros de largo plazo.

@@ -128,18 +128,20 @@ El análisis inicial consistió en obtener estadísticas descriptivas para obten
 
 - **Promedio, Máximo y Mínimo de `ride_length` para cada grupo**:  
   Se calculó la duración promedio de los viajes (`ride_length`) para los dos grupos de usuarios: miembros y ocasionales. Se compararon también los valores máximos y mínimos para observar si existen diferencias notables en la duración de los viajes entre los dos grupos.
-  
- df['ride_length'] = (df['ended_at'] - df['started_at']).dt.total_seconds() / 60  # En minutos
+
+![image](https://github.com/user-attachments/assets/28d5f00a-76b4-4d0a-b017-667186ea8ac6)
 
 - **Recuento de Viajes por Día de la Semana y por Tipo de Usuario**:  
   Se contabilizó la cantidad de viajes realizados por día de la semana para cada tipo de usuario. Esto permitió identificar si ciertos días tienen una mayor o menor demanda, así como la preferencia de los usuarios por ciertos días de la semana (por ejemplo, fines de semana vs. días laborales).
   
- summary = df.groupby('user_type')['ride_length'].describe()
+![image](https://github.com/user-attachments/assets/3af56f50-d4b2-4697-90ca-5e578de50572)
 
 ### Análisis Detallado
 
 - **Comparación de Duración de Viajes**:  
-  Se utilizó una tabla dinámica para calcular la duración promedio de los viajes para ambos grupos (miembros vs. ocasionales). Se observaron diferencias en la duración de los viajes, sugiriendo que los miembros tienden a realizar viajes más cortos y frecuentes, mientras que los ciclistas ocasionales tienen viajes más largos, a menudo asociados a recorridos recreativos o de ocio.
+  Se realizó un análisis de la duración de los viajes para cada tipo de usuario utilizando el código de Python. Se calculó la duración promedio de los viajes para los miembros y ciclistas ocasionales, y se obtuvieron resúmenes estadísticos como la media, el máximo y el mínimo, con el fin de evaluar las diferencias en la duración de los viajes entre ambos grupos.
+  
+  ![image](https://github.com/user-attachments/assets/78dba02f-ae73-4719-a843-74a62db515cc)
 
 - **Patrones Temporales**:  
   Se analizó la distribución de los viajes a lo largo de la semana, identificando patrones de comportamiento que muestran diferencias entre días laborales y fines de semana. Los miembros parecen usar las bicicletas con más regularidad durante la semana, mientras que los ciclistas ocasionales se concentran más en los fines de semana, lo que podría estar relacionado con actividades recreativas.
@@ -158,3 +160,21 @@ El análisis inicial consistió en obtener estadísticas descriptivas para obten
 - **Oportunidades de Marketing**:  
   A partir de los hallazgos, se podrían diseñar estrategias de marketing dirigidas a promover las membresías en momentos específicos, como en días de baja demanda o en estaciones con menor tráfico. Por ejemplo, se podrían ofrecer descuentos o promociones especiales para nuevos miembros en días con menos viajes o en zonas geográficas donde los ciclistas ocasionales sean más frecuentes. Además, podrían promoverse planes de membresía con beneficios adicionales durante las horas pico para fidelizar a los usuarios que ya utilizan las bicicletas.
 
+---
+
+## 5. Recomendaciones Basadas en el Análisis
+
+### Promociones Segmentadas según Uso:
+
+- **Recomendación**: Ofrecer promociones personalizadas para convertir a ciclistas ocasionales en miembros. Si se observa que los ciclistas ocasionales tienden a hacer viajes largos los fines de semana, se puede diseñar una campaña que ofrezca descuentos en las membresías para aquellos que usen las bicicletas en estos días. Esto podría incluir un descuento de "viaje frecuente" para usuarios que utilicen el servicio durante el fin de semana o bien beneficios adicionales como viajes ilimitados para fines de semana.
+- **Objetivo**: Atraer a los ciclistas ocasionales y convertirlos en miembros mediante promociones que se alineen con sus hábitos de uso.
+
+### Campañas Digitales Personalizadas:
+
+- **Recomendación**: Utilizar los patrones de comportamiento temporal y geográfico para dirigir campañas publicitarias específicas en redes sociales y plataformas digitales. Por ejemplo, si se identifica que ciertos días de la semana o horas del día tienen una mayor demanda de viajes, las campañas podrían enfocarse en estos momentos, destacando las ventajas de convertirse en miembro. Además, las campañas podrían incluir anuncios geolocalizados en áreas donde los ciclistas ocasionales son más activos.
+- **Objetivo**: Aumentar la visibilidad y conversión de las membresías mediante campañas de marketing segmentadas que resuenen con los horarios y ubicaciones de uso más populares.
+
+### Incentivos para la Fidelización:
+
+- **Recomendación**: Desarrollar programas de fidelización que incentiven a los usuarios ocasionales a probar la membresía anual, resaltando beneficios exclusivos como viajes ilimitados, tarifas especiales o acceso prioritario a bicicletas en estaciones de alta demanda. Además, se pueden incluir recompensas por la frecuencia de uso o por invitar a amigos a unirse al servicio.
+- **Objetivo**: Fomentar la lealtad entre los usuarios actuales, alentándolos a convertirse en miembros de largo plazo."

@@ -87,7 +87,7 @@ Para asegurar la calidad y coherencia del análisis, se siguieron los siguientes
 ### Descarga y Organización
 
 #### Descarga de Datos
-- Se descargaron los 12 meses de datos históricos de viajes de Cyclistic en archivos CSV (y/o Excel).
+- Se descargaron los 12 meses de datos históricos de viajes de Cyclistic en archivos CSV.
 
 #### Organización de Archivos
 - Se creó una carpeta principal (por ejemplo, **Cyclistic_CasoPractico**), que contiene subcarpetas organizadas por tipo de archivo:

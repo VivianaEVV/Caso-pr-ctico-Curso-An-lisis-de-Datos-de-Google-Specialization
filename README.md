@@ -48,23 +48,12 @@ La directora de marketing, **Lily Moreno**, ha identificado la necesidad de aume
 Para este análisis se han utilizado los datos históricos correspondientes a los **últimos 12 meses** de viajes realizados en el sistema de bicicletas compartidas de Cyclistic. Los datos fueron proporcionados en archivos en formato **CSV**, los cuales contienen información detallada de cada viaje.
 
 ### Contenido de los Datos
-- **ID del Viaje:**  
-  Un identificador único para cada viaje (originalmente denominado `trip_id`).
-
-- **Fecha y Hora de Inicio:**  
-  Registro del momento en el que inicia el viaje (columna `started_at`).
-
-- **Fecha y Hora de Fin:**  
-  Registro del momento en el que finaliza el viaje (columna `ended_at`).
-
-- **Tipo de Usuario:**  
-  Información que permite diferenciar entre usuarios con membresía anual (miembros) y usuarios que utilizan pases de un solo viaje o diarios (ciclistas ocasionales).
-
-- **Información de Estaciones:**  
-  Datos relativos a la estación de origen y la estación de destino, incluyendo nombres y, en algunos casos, identificadores y coordenadas geográficas (latitud y longitud).
-
-- **Otras Variables:**  
-  En algunos archivos se incluyen detalles adicionales como el tipo de bicicleta utilizada (por ejemplo, bicicleta eléctrica o tradicional).
+- **ID del Viaje:** Un identificador único para cada viaje (originalmente denominado `trip_id`).
+- **Fecha y Hora de Inicio:** Registro del momento en el que inicia el viaje (columna `started_at`).
+- **Fecha y Hora de Fin:** Registro del momento en el que finaliza el viaje (columna `ended_at`).
+- **Tipo de Usuario:** Información que permite diferenciar entre usuarios con membresía anual (miembros) y usuarios que utilizan pases de un solo viaje o diarios (ciclistas ocasionales).
+- **Información de Estaciones:** Datos relativos a la estación de origen y la estación de destino, incluyendo nombres y, en algunos casos, identificadores y coordenadas geográficas (latitud y longitud).
+- **Otras Variables:** En algunos archivos se incluyen detalles adicionales como el tipo de bicicleta utilizada (por ejemplo, bicicleta eléctrica o tradicional).
 
 ### Consideraciones de Privacidad y Calidad
 - **Privacidad:**  

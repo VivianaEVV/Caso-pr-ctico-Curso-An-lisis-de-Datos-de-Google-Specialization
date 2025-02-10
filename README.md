@@ -1,5 +1,46 @@
 # Caso Práctico Curso Análisis de Datos de Google Specialization
 
+## Menú
+
+- [1. Instrucción de la Tarea Empresarial](#1-instrucción-de-la-tarea-empresarial)
+  - [Objetivo](#objetivo)
+  - [Contexto y Antecedentes](#contexto-y-antecedentes)
+    - [Sobre Cyclistic](#sobre-cyclistic)
+    - [Rentabilidad y Estrategia de Marketing](#rentabilidad-y-estrategia-de-marketing)
+    - [Rol de la Dirección](#rol-de-la-dirección)
+  - [Preguntas Clave a Responder](#preguntas-clave-a-responder)
+    - [Diferencias en el Uso](#diferencias-en-el-uso)
+    - [Motivar para la Conversión](#motivar-para-la-conversión)
+    - [Oportunidades en Medios Digitales](#oportunidades-en-medios-digitales)
+- [2. Fuentes de Datos Utilizadas](#2-fuentes-de-datos-utilizadas)
+  - [Datos Históricos de Viajes de Cyclistic](#datos-históricos-de-viajes-de-cyclistic)
+  - [Contenido de los Datos](#contenido-de-los-datos)
+  - [Consideraciones de Privacidad y Calidad](#consideraciones-de-privacidad-y-calidad)
+- [3. Documentación de la Limpieza y Manipulación de Datos](#3-documentación-de-la-limpieza-y-manipulación-de-datos)
+  - [Descarga y Organización](#descarga-y-organización)
+    - [Descarga de Datos](#descarga-de-datos)
+    - [Organización de Archivos](#organización-de-archivos)
+  - [Conversión y Estandarización](#conversión-y-estandarización)
+    - [Conversión de Formatos](#conversión-de-formatos)
+    - [Estandarización de Columnas](#estandarización-de-columnas)
+  - [Creación de Nuevas Variables](#creación-de-nuevas-variables)
+    - [`ride_length` (Duración del Viaje)](#ride_length-duración-del-viaje)
+    - [`day_of_week` (Día de la Semana)](#day_of_week-día-de-la-semana)
+  - [Verificación y Limpieza Adicional](#verificación-y-limpieza-adicional)
+    - [Revisión de Duplicados y Valores Faltantes](#revisión-de-duplicados-y-valores-faltantes)
+    - [Corrección de Errores en Fechas y Horas](#corrección-de-errores-en-fechas-y-horas)
+  - [Documentación de Cambios y Versiones](#documentación-de-cambios-y-versiones)
+    - [Registro de Cambios](#registro-de-cambios)
+    - [Versiones de Respaldo](#versiones-de-respaldo)
+- [4. Resumen del Análisis](#4-resumen-del-análisis)
+  - [Exploración Inicial](#exploración-inicial)
+  - [Análisis Detallado](#análisis-detallado)
+- [5. Recomendaciones Basadas en el Análisis](#5-recomendaciones-basadas-en-el-análisis)
+  - [Promociones Segmentadas según Uso](#promociones-segmentadas-según-uso)
+  - [Campañas Digitales Personalizadas](#campañas-digitales-personalizadas)
+  - [Incentivos para la Fidelización](#incentivos-para-la-fidelización)
+---
+
 ## Tarea Empresarial: Análisis de Usuarios en Cyclistic
 
 ---

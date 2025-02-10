@@ -77,15 +77,15 @@ Para asegurar la calidad y coherencia del análisis, se siguieron los siguientes
 - Se descargaron los 12 meses de datos históricos de viajes de Cyclistic en archivos CSV.
 
 #### Organización de Archivos
-- Se creó una carpeta principal (por ejemplo, **Cyclistic_CasoPractico**), que contiene subcarpetas organizadas por tipo de archivo:
+- Se creó una carpeta principal, que contiene subcarpetas organizadas por tipo de archivo:
   - **Archivos Originales:** Carpeta con los archivos en formato CSV.
-  - **Archivos Convertidos:** Carpeta con los archivos convertidos a formato XLS (o el formato que se haya utilizado).
+  - **Copia Archivos:** Carpeta con los archivos copiados.
 - Esta estructura permitió mantener una copia de seguridad de la información original, evitando alteraciones accidentales durante el procesamiento.
 
 ### Conversión y Estandarización
 
 #### Conversión de Formatos
-- Cada archivo fue abierto y guardado en el formato adecuado (Excel o Google Sheets), garantizando un formato homogéneo para facilitar el análisis.
+- Cada archivo fue abierto y guardado en el formato adecuado, garantizando un formato homogéneo para facilitar el análisis.
 
 #### Estandarización de Columnas
 - Se verificó que las columnas de cada archivo tengan el mismo formato y nomenclatura, lo que permitió la concatenación de los archivos sin pérdida de información o discrepancias en los tipos de datos.
@@ -98,7 +98,7 @@ Para asegurar la calidad y coherencia del análisis, se siguieron los siguientes
 
 #### `day_of_week` (Día de la Semana)
 - Se generó la variable `day_of_week` utilizando la función `WEEKDAY` (por ejemplo, en Excel: `=WEEKDAY(C2,1)`), que extrae el día de la semana a partir de la fecha de inicio del viaje.
-- Se verificó que, según la función utilizada, el número **1** corresponde al domingo y el número **7** al sábado (o se ajustó según fuera necesario para cumplir con el orden deseado).
+- Se verificó que, según la función utilizada, el número **1** corresponde al domingo y el número **7** al sábado.
 
 ### Verificación y Limpieza Adicional
 
@@ -128,6 +128,13 @@ El análisis inicial consistió en obtener estadísticas descriptivas para obten
 
 - **Promedio, Máximo y Mínimo de `ride_length` para cada grupo**:  
   Se calculó la duración promedio de los viajes (`ride_length`) para los dos grupos de usuarios: miembros y ocasionales. Se compararon también los valores máximos y mínimos para observar si existen diferencias notables en la duración de los viajes entre los dos grupos.
+
+  # Calcular la duración de los viajes
+df['ride_length'] = (df['ended_at'] - df['started_at']).dt.total_seconds() / 60  # En minutos
+
+# Análisis descriptivo para ambos grupos
+summary = df.groupby('user_type')['ride_length'].describe()
+
 
 - **Recuento de Viajes por Día de la Semana y por Tipo de Usuario**:  
   Se contabilizó la cantidad de viajes realizados por día de la semana para cada tipo de usuario. Esto permitió identificar si ciertos días tienen una mayor o menor demanda, así como la preferencia de los usuarios por ciertos días de la semana (por ejemplo, fines de semana vs. días laborales).

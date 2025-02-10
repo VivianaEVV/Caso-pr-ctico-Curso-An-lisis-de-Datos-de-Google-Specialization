@@ -128,11 +128,13 @@ El análisis inicial consistió en obtener estadísticas descriptivas para obten
 
 - **Promedio, Máximo y Mínimo de `ride_length` para cada grupo**:  
   Se calculó la duración promedio de los viajes (`ride_length`) para los dos grupos de usuarios: miembros y ocasionales. Se compararon también los valores máximos y mínimos para observar si existen diferencias notables en la duración de los viajes entre los dos grupos.
-- df['ride_length'] = (df['ended_at'] - df['started_at']).dt.total_seconds() / 60  # En minutos
+  
+ df['ride_length'] = (df['ended_at'] - df['started_at']).dt.total_seconds() / 60  # En minutos
 
 - **Recuento de Viajes por Día de la Semana y por Tipo de Usuario**:  
   Se contabilizó la cantidad de viajes realizados por día de la semana para cada tipo de usuario. Esto permitió identificar si ciertos días tienen una mayor o menor demanda, así como la preferencia de los usuarios por ciertos días de la semana (por ejemplo, fines de semana vs. días laborales).
-- summary = df.groupby('user_type')['ride_length'].describe()
+  
+ summary = df.groupby('user_type')['ride_length'].describe()
 
 ### Análisis Detallado
 
